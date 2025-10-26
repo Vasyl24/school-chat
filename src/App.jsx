@@ -1,15 +1,20 @@
 // import { useState } from 'react';
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css';
-import MainSignIn from './pages/MainSignIn';
+// import './App.css';
+import SignIn from './pages/SignIn/SignIn';
+import MainSignIn from './pages/MainSignIn/MainSignIn';
+import { Container } from './styles/container';
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <MainSignIn />
+      <Container>
+        {/* <MainSignIn /> */}
+        <SignIn />
+      </Container>
       {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

@@ -1,21 +1,30 @@
 import styled from 'styled-components';
+// import { createGlobalStyle } from 'styled-components';
+
+// const GlobalStyle = createGlobalStyle`
+//       body {
+// background-color: #1570ef;
+//       }
+//     `;
 
 export const Background = styled.div`
-  /* background-color: #1570ef;
-  width: 100%;
+  padding-top: 200px;
+
+  /* background-color: #1570ef; */
+  /* width: 100%;
   height: 100%; */
 `;
 
 export const Title = styled.h1`
-  padding-top: 200px;
   margin-bottom: 330px;
 
   color: #ffffff;
-  font-family: "Suisse Int'l Condensed Trial";
+  /* font-family: "Suisse Int'l Condensed Trial"; */
   font-size: 48px;
 
   font-weight: 600;
   line-height: 90%; /* 43.2px */
+  text-align: center;
 `;
 
 export const ButtonList = styled.ul`

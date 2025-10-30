@@ -4,6 +4,7 @@
 // import './App.css';
 import SignIn from './pages/SignIn/SignIn';
 import MainSignIn from './pages/MainSignIn/MainSignIn';
+import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import { Container } from './styles/container';
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
     <>
       <Container>
         {/* <MainSignIn /> */}
-        <SignIn />
+        {/* <SignIn /> */}
+        <ForgotPassword />
       </Container>
       {/* <div>
         <a href="https://vite.dev" target="_blank">

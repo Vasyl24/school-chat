@@ -35,7 +35,7 @@ const Logo = () => {
   );
 };
 
-const Avatar = () => {
+export const Avatar = () => {
   return (
     <>
       <LogoBoxContactsContainerStyle>

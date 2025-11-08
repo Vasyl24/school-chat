@@ -5,7 +5,7 @@ export const ChatHeaderContainerStyle = styled.div`
   border-bottom: 0.3px solid #4c4c4c;
   display: flex;
   align-items: center;
-  justify-content: between;
+  justify-content: space-between;
   padding: 0 5rem
   
   }

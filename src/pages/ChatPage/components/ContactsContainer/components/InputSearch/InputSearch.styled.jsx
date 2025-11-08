@@ -4,19 +4,19 @@ import { IoMdSearch } from "react-icons/io";
 export const InputWrapper = styled.div`
   position: relative;
   width: 100%;
-  max-width: 20rem; /* эквивалент max-w-sm */
+  max-width: 20rem;
 `;
 
 export const SearchIcon = styled(IoMdSearch)`
   position: absolute;
-  left: 0.75rem; /* ~12px */
+  left: 0.75rem;
   top: 50%;
   transform: translateY(-50%);
-  height: 1rem; /* 16px */
+  height: 1rem;
   width: 1rem;
   z-index: 2;
   pointer-events: none;
-  color: #6b7280; /* эквивалент text-muted-foreground */
+  color: #6b7280;
 `;
 
 export const StyledInput = styled.input`
@@ -32,12 +32,12 @@ export const StyledInput = styled.input`
   transition: border-color 0.2s ease;
 
   &:focus {
-    border-color: #2563eb; /* синий — аналог ring */
+    border-color: #2563eb;
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
   }
 
   &::placeholder {
-    color: #9ca3af; /* muted text */
+    color: #9ca3af;
   }
 
   &:disabled {

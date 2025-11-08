@@ -14,113 +14,7 @@ import { IoMdArrowDropright } from "react-icons/io";
 import { GoPlus } from "react-icons/go";
 import { SidebarRail } from "../SidebarRail";
 import { SidebarProvider } from "../SidebarRail/SidebarContext";
-
-const data = {
-  navMain: [
-    {
-      title: "Favourite chats",
-      url: "#",
-      items: [
-        {
-          title: "# first",
-          url: "#",
-        },
-        {
-          title: "# second",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "School",
-      url: "#",
-      items: [
-        {
-          title: "# first",
-          url: "#",
-        },
-        {
-          title: "# second",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "My Class",
-      url: "#",
-      items: [
-        {
-          title: "# Class 9A - Main Chat",
-          url: "#",
-        },
-        {
-          title: "# Class Announcements (read only)",
-          url: "#",
-        },
-        {
-          title: "# Informal",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Subjects",
-      url: "#",
-      items: [
-        {
-          title: "# first",
-          url: "#",
-        },
-        {
-          title: "# second",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Clubs",
-      url: "#",
-      items: [
-        {
-          title: "# first",
-          url: "#",
-        },
-        {
-          title: "# second",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Events",
-      url: "#",
-      items: [
-        {
-          title: "# first",
-          url: "#",
-        },
-        {
-          title: "# second",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Direct messages",
-      url: "#",
-      items: [
-        {
-          title: "John Dorian",
-          url: "#",
-        },
-        {
-          title: "Christopher Turk",
-          url: "#",
-        },
-      ],
-    },
-  ],
-};
+import { sidebar } from "../../../../../../mock/data";
 
 const Content = () => {
   const [openGroups, setOpenGroups] = useState({});
@@ -137,7 +31,7 @@ const Content = () => {
       <AddButton />
       <SidebarWrapper>
         <SidebarRail />
-        {data.navMain.map((group) => {
+        {sidebar.navMain.map((group) => {
           const isOpen = openGroups[group.title] ?? true; // можно задать defaultOpen=true
           return (
             <Group key={group.title}>

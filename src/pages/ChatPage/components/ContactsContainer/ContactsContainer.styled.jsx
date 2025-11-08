@@ -40,7 +40,7 @@ export const LogoContactsContainerStyle = styled.div`
 export const LogoBoxContactsContainerStyle = styled.span`
   position: relative;
   padding: 0.5rem 0.6rem;
-  background-color: white;
+  background-color: #eaeaeaff;
   color: #bcbcbcff;
   line-height: 90%;
   font-size: 18px;

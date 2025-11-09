@@ -4,7 +4,7 @@ export const RailButton = styled.button`
   position: absolute;
   inset-y: 0;
   z-index: 20;
-  width: 1rem; /* w-4 */
+  width: 1rem;
   transform: translateX(-50%);
   transition: all 0.2s linear;
   display: none;
@@ -22,12 +22,12 @@ export const RailButton = styled.button`
   }
 
   &:hover::after {
-    background-color: #e2e2e2; /* аналог hover:bg-sidebar-border */
+    background-color: #e2e2e2;
   }
 
   @media (min-width: 640px) {
-    display: flex; /* sm:flex */
+    display: flex;
   }
 
-  cursor: ew-resize; /* для изменения ширины */
+  cursor: ew-resize;
 `;

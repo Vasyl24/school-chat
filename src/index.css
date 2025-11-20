@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   src: url(./assets/fonts/Satoshi-Variable.ttf);
 }
 
@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   /* background-color: #1570ef; */
   background-color: #f5f6fa;
 
@@ -59,9 +59,9 @@ button {
   padding: 0;
 }
 
-svg {
+/* svg {
   fill: none;
-}
+} */
 
 input {
   font-family: inherit;

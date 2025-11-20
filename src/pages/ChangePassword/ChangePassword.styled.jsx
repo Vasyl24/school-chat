@@ -24,7 +24,7 @@ export const MainContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  margin-bottom: 8px;
+  margin-bottom: 40px;
 
   color: #18181a;
   text-align: center;
@@ -36,71 +36,51 @@ export const Title = styled.h2`
 `;
 
 export const Text = styled.p`
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   color: #686970;
-  text-align: center;
 
   font-family: Satoshi;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 140%; /* 25.2px */
 `;
 
 export const InputList = styled.ul`
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 `;
 
-export const InputNumber = styled.input`
+export const InputItem = styled.li`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 
-  width: 64px;
-  height: 64px;
-  padding: 8px;
+  &:first-child {
+    margin-bottom: 8px;
+  }
+`;
+
+export const Label = styled.label`
+  margin-bottom: 8px;
+
+  color: var(--Gray-100, #18181a);
+
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 500;
+`;
+
+export const Input = styled.input`
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 8px 16px;
+
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 500;
+
+  color: var(--Gray-70, #686970);
   border-radius: 8px;
   border: 1px solid var(--Gray-20, #dbdbe2);
-
-  background: var(--White, #fff);
-  box-shadow: 0 1px 2px 0 rgba(10, 13, 18, 0.05);
-
-  color: var(--Gray-20, #dbdbe2);
-  text-align: center;
-  font-family: Satoshi;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 140%; /* 56px */
-`;
-
-export const BoldText = styled.span`
-  color: #686970;
-
-  font-family: Satoshi;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 140%;
-`;
-
-export const HelpText = styled.p`
-  color: #18181a;
-
-  font-family: Satoshi;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-`;
-
-export const Link = styled.a`
-  color: #1570ef;
-
-  font-family: Satoshi;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: underline;
+  background: var(--Gray-0, #fff);
 `;
 
 export const ButtonSend = styled.button`

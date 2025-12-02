@@ -78,7 +78,26 @@ If you are developing a production application, we recommend using TypeScript wi
 │   │   │   │   │   ├── ContactsContainer.styled.jsx
 │   │   │   │   │   └── index.jsx
 │   │   │   │   │
-│   │   │   │   └── EmptyContainer /
+│   │   │   │   ├── EmptyContainer /
+│   │   │   │   ├── ProfileModal /
+│   │   │   │   │   ├── BodyProfile /
+│   │   │   │   │   │   ├── BodyProfile.styled.jsx
+│   │   │   │   │   │   └── index.jsx
+│   │   │   │   │   │
+│   │   │   │   │   ├── ReturnButton /
+│   │   │   │   │   │   ├── ReturnButton.styled.jsx
+│   │   │   │   │   │   └── index.jsx
+│   │   │   │   │   │
+│   │   │   │   │   ├── SaveButton /
+│   │   │   │   │   │   ├── SaveButton.styled.jsx
+│   │   │   │   │   │   └── index.jsx
+│   │   │   │   │   │
+│   │   │   │   │   ├── ProfileModal.styled.jsx
+│   │   │   │   │   └── index.jsx
+│   │   │   │   │
+│   │   │   │   └── CreateChat /
+│   │   │   │       ├── CreateChat.styled.jsx
+│   │   │   │       └── index.jsx
 │   │   │   │
 │   │   │   ├── Chat.styled.jsx
 │   │   │   └── index.jsx

@@ -16,7 +16,7 @@ import { SidebarRail } from "../SidebarRail";
 import { SidebarProvider } from "../SidebarRail/SidebarContext";
 import { sidebar } from "../../../../../../mock/data";
 
-const Content = () => {
+const Content = ({ onOpenCreateChat }) => {
   const [openGroups, setOpenGroups] = useState({});
 
   const toggleGroup = (title) => {
@@ -28,7 +28,7 @@ const Content = () => {
 
   return (
     <SidebarProvider>
-      <AddButton />
+      <AddButton onOpenCreateChat={onOpenCreateChat} />
       <SidebarWrapper>
         <SidebarRail />
         {sidebar.navMain.map((group) => {
@@ -48,7 +48,7 @@ const Content = () => {
                     <a href={item.url}>{item.title}</a>
                   </GroupItem>
                 ))}
-                <AddChat />
+                <AddChat onOpenCreateChat={onOpenCreateChat} />
               </GroupList>
             </Group>
           );
@@ -60,9 +60,9 @@ const Content = () => {
 
 export default Content;
 
-const AddChat = () => {
+const AddChat = ({ onOpenCreateChat }) => {
   return (
-    <AddChatStyle>
+    <AddChatStyle onClick={onOpenCreateChat}>
       <a href={"#"}>
         <GoPlus />
         <span>Add Chat</span>
@@ -71,9 +71,9 @@ const AddChat = () => {
   );
 };
 
-const AddButton = () => {
+const AddButton = ({ onOpenCreateChat }) => {
   return (
-    <AddButtonStyle>
+    <AddButtonStyle onClick={onOpenCreateChat}>
       <a href={"#"}>
         <GoPlus />
       </a>

@@ -23,14 +23,13 @@ function App() {
       </Routes>
     </BrowserRouter>
 
-
     // {/* <Container> */}
     // {/* <MainSignIn /> */}
     // {/* <SignIn /> */}
     // {/* <Chat />
     // <ForgotPassword />
- {/* <EnterCode /> */}
-//         <ChangePassword />
+    /* <EnterCode /> */
+    //         <ChangePassword />
     // </Container> */}
   );
 }

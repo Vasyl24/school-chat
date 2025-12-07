@@ -47,34 +47,6 @@ export const CreateChatFooter = styled.div`
   height: 68px;
 `;
 
-export const ButtonCancel = styled.button`
-  padding: 0.5rem;
-  font-size: 16px;
-`;
-
-export const ButtonDelete = styled.button`
-  padding: 0.5rem;
-  font-size: 16px;
-  color: #ff3b30;
-`;
-
-export const CreateChatHeader = styled.div`
-  height: 10vh;
-  display: flex;
-  align-items: center;
-`;
-
-export const ArrowBack = styled.button`
-  padding: 0.5rem 1rem;
-  background: transparent;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 20px;
-  &:hover {
-    color: #4c4c4c;
-  }
-`;
-
 export const InputWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -101,17 +73,4 @@ export const Label = styled.label`
   font-size: 0.875rem;
   color: #666;
   margin-bottom: 0.25rem;
-`;
-
-export const CreateButtonStyle = styled.button`
-  padding: 1rem;
-  background-color: #1570ef;
-  font-size: 16px;
-  font-weight: 500;
-  color: white;
-  border-radius: 8px;
-  border: 1px solid #1570ef;
-  line-height: 90%;
-  width: 100%;
-  height: 44px;
 `;

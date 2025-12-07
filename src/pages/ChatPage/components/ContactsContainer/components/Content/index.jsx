@@ -15,6 +15,7 @@ import { GoPlus } from "react-icons/go";
 import { SidebarRail } from "../SidebarRail";
 import { SidebarProvider } from "../SidebarRail/SidebarContext";
 import { sidebar } from "../../../../../../mock/data";
+import Button from "../../../../../../ui/Button";
 
 const Content = ({ onOpenCreateChat }) => {
   const [openGroups, setOpenGroups] = useState({});
@@ -28,11 +29,18 @@ const Content = ({ onOpenCreateChat }) => {
 
   return (
     <SidebarProvider>
-      <AddButton onOpenCreateChat={onOpenCreateChat} />
+      <AddButtonStyle>
+        <Button
+          onClick={onOpenCreateChat}
+          children={<GoPlus size={24} />}
+          width="48px"
+          height="48px"
+        />
+      </AddButtonStyle>
       <SidebarWrapper>
         <SidebarRail />
         {sidebar.navMain.map((group) => {
-          const isOpen = openGroups[group.title] ?? true; // можно задать defaultOpen=true
+          const isOpen = openGroups[group.title] ?? true;
           return (
             <Group key={group.title}>
               <GroupHeader
@@ -68,15 +76,5 @@ const AddChat = ({ onOpenCreateChat }) => {
         <span>Add Chat</span>
       </a>
     </AddChatStyle>
-  );
-};
-
-const AddButton = ({ onOpenCreateChat }) => {
-  return (
-    <AddButtonStyle onClick={onOpenCreateChat}>
-      <a href={"#"}>
-        <GoPlus />
-      </a>
-    </AddButtonStyle>
   );
 };

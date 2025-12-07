@@ -2,26 +2,22 @@
 
 import { useEffect, useRef } from "react";
 import {
-  ArrowBack,
-  ButtonCancel,
-  ButtonDelete,
-  CreateButtonStyle,
   CreateChatContainer,
   CreateChatContent,
   CreateChatFooter,
-  CreateChatHeader,
   InputStyle,
   InputWrapper,
   Label,
 } from "./CreateChat.styled";
-import { IoIosArrowBack } from "react-icons/io";
+import Button from "../../../../ui/Button";
+import HeaderBack from "../../../../ui/HeaderBack";
 
 export function CreateChat({ onCancel, onConfirm }) {
-  const deleteRef = useRef();
+  const createRef = useRef();
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (deleteRef.current && !deleteRef.current.contains(e.target)) {
+      if (createRef.current && !createRef.current.contains(e.target)) {
         onCancel();
       }
     };
@@ -32,14 +28,9 @@ export function CreateChat({ onCancel, onConfirm }) {
   return (
     <>
       <CreateChatContainer>
-        <CreateChatContent ref={deleteRef}>
+        <CreateChatContent ref={createRef}>
           <div>
-            <CreateChatHeader>
-              <ArrowBack onClick={onCancel}>
-                <IoIosArrowBack />
-              </ArrowBack>
-              <div>Create chat</div>
-            </CreateChatHeader>
+            <HeaderBack children="Create chat" onClick={onCancel} />
             <InputWrapper>
               <Label>Name</Label>
               <InputStyle
@@ -52,16 +43,10 @@ export function CreateChat({ onCancel, onConfirm }) {
           </div>
 
           <CreateChatFooter>
-            <CreateButton />
+            <Button children="Create" />
           </CreateChatFooter>
         </CreateChatContent>
       </CreateChatContainer>
     </>
   );
 }
-
-const CreateButton = ({}) => {
-  return <CreateButtonStyle>Create</CreateButtonStyle>;
-};
-
-export default CreateButton;

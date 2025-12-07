@@ -49,11 +49,11 @@ If you are developing a production application, we recommend using TypeScript wi
 │   │   │   │   │   │   │   ├── ChatHeader.styled.jsx
 │   │   │   │   │   │   │   └── index.jsx
 │   │   │   │   │   │   │
-│   │   │   │   │   │   ├── MessageBar /
+│   │   │   │   │   │   ├── MessageBar /   📅 7.12.2025 update
 │   │   │   │   │   │   │   ├── MessageBar.styled.jsx
 │   │   │   │   │   │   │   └── index.jsx
 │   │   │   │   │   │   │
-│   │   │   │   │   │   └── MessageContainer /
+│   │   │   │   │   │   └── MessageContainer /   📅 7.12.2025 update
 │   │   │   │   │   │       ├── MessageContainer.styled.jsx
 │   │   │   │   │   │       └── index.jsx
 │   │   │   │   │   │
@@ -62,7 +62,7 @@ If you are developing a production application, we recommend using TypeScript wi
 │   │   │   │   │
 │   │   │   │   ├── ContactsContainer /
 │   │   │   │   │   ├── components /
-│   │   │   │   │   │   ├── Content /
+│   │   │   │   │   │   ├── Content /   📅 7.12.2025 update
 │   │   │   │   │   │   │   ├── Content.styled.jsx
 │   │   │   │   │   │   │   └── index.jsx
 │   │   │   │   │   │   │
@@ -79,24 +79,20 @@ If you are developing a production application, we recommend using TypeScript wi
 │   │   │   │   │   └── index.jsx
 │   │   │   │   │
 │   │   │   │   ├── EmptyContainer /
-│   │   │   │   ├── ProfileModal /
-│   │   │   │   │   ├── BodyProfile /
-│   │   │   │   │   │   ├── BodyProfile.styled.jsx
-│   │   │   │   │   │   └── index.jsx
-│   │   │   │   │   │
-│   │   │   │   │   ├── ReturnButton /
-│   │   │   │   │   │   ├── ReturnButton.styled.jsx
-│   │   │   │   │   │   └── index.jsx
-│   │   │   │   │   │
-│   │   │   │   │   ├── SaveButton /
-│   │   │   │   │   │   ├── SaveButton.styled.jsx
-│   │   │   │   │   │   └── index.jsx
-│   │   │   │   │   │
-│   │   │   │   │   ├── ProfileModal.styled.jsx
+│   │   │   │   ├── EditProfile /  📅 7.12.2025
+│   │   │   │   │   ├── EditProfile.styled.jsx
 │   │   │   │   │   └── index.jsx
 │   │   │   │   │
-│   │   │   │   └── CreateChat /
-│   │   │   │       ├── CreateChat.styled.jsx
+│   │   │   │   ├── MyProfile /  📅 7.12.2025
+│   │   │   │   │   ├── MyProfile.styled.jsx
+│   │   │   │   │   └── index.jsx
+│   │   │   │   │
+│   │   │   │   ├── CreateChat /   📅 7.12.2025 update
+│   │   │   │   │   ├── CreateChat.styled.jsx
+│   │   │   │   │   └── index.jsx
+│   │   │   │   │
+│   │   │   │   └── UserProfile /   📅 7.12.2025
+│   │   │   │       ├── UserProfile.styled.jsx
 │   │   │   │       └── index.jsx
 │   │   │   │
 │   │   │   ├── Chat.styled.jsx
@@ -106,7 +102,31 @@ If you are developing a production application, we recommend using TypeScript wi
 │   │   ├── SignIn /
 │   │   ├── Chat.jsx
 │   │   ├── CreateAccount.jsx
-│   │   └── Main.jsx.
+│   │   └── Main.jsx
+│   │
+│   │
+│   │
+│   ├── ui /
+│   │   ├── ArrowBack /  📅 7.12.2025
+│   │   │   ├── ArrowBack.styled.jsx
+│   │   │   └── index.jsx
+│   │   │
+│   │   ├── Avatar /  📅 7.12.2025
+│   │   │   ├── Avatar.styled.jsx
+│   │   │   └── index.jsx
+│   │   │
+│   │   ├── Button /  📅 7.12.2025
+│   │   │   ├── Button.styled.jsx
+│   │   │   └── index.jsx
+│   │   │
+│   │   ├── HeaderBack /  📅 7.12.2025
+│   │   │   ├── HeaderBack.styled.jsx
+│   │   │   └── index.jsx
+│   │   │
+│   │   └── ToggleSwitch /  📅 7.12.2025
+│   │       ├── ToggleSwitch.styled.jsx
+│   │       └── index.jsx
+│   │
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
